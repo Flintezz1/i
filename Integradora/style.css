@@ -9,8 +9,15 @@
 body{
     text-align: center;
     font-family: sans-serif;
-    
+    background-image: url(/header.jpg);
 }
+.imagen {
+
+    margin-left: 250px;
+
+
+}
+
 
 .content-header{
     margin-top: 70px ;
@@ -79,4 +86,8 @@ body{
 .navbar a:hover {
     background: #3f3f3f;
     
+}
+.box-container{
+    
+
 }
