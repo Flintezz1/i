@@ -8,8 +8,8 @@
 }
 body{
     text-align: center;
-    font-family: sans-serif;
-    background-image: url(/header.jpg);
+    font-family: monospace;
+    background: url(/header.jpg) no-repeat fixed center;
 }
 .imagen {
 
@@ -29,10 +29,12 @@ body{
     display: flex;
    align-items: center;
    justify-content: space-around;
+  
+
     height: 63px;
-    background-color: #283441;
+  background-color:#2a2886;
     width: 100%;
-    z-index: 100;
+    z-index: 999;
 }
 .navbar{
     display: flex;
@@ -46,10 +48,11 @@ body{
 
 }
 .navbar1 a {
-    color: #d9d9d9  ;
+    color: #f6f7fb  ;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
+    touch-action: manipulation;
 
 }
 .navbar2{
@@ -58,36 +61,181 @@ body{
 
 }
 .navbar2 a {
-    color: #d9d9d9;
+    color: #f6f7fb  ;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 20px;
+    touch-action: manipulation;
 
 }
 
 .logo a {
     display: block;
     text-decoration: none;
-    color: #d9d9d9;
+    color: #121212 ;
     text-transform: uppercase;
     font-size: 20px;
-
+    
 }
+
 .logo{
     margin-left: 30px;
     
 }
 .navbar a {
-    color: #d9d9d9;;
+    color: #f6f7fb  ;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
+    touch-action: manipulation;
 
 }
 .navbar a:hover {
-    background: #3f3f3f;
+    
     
 }
 .box-container{
     
 
+}
+.pene{
+    margin-top: 500px;
+}
+.Inicio{
+    
+}
+.fromulario{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+}
+.fromulario h1{
+    text-align: center    ;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid  #a90dd4;
+}
+.fromulario form{
+    padding: 0 40px ;
+    box-sizing: border-box;
+}
+form .username{
+    position: relative;
+border-bottom: 3px solid #a90dd4;
+margin: 30px 0;
+}
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 60px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.username label{
+    position: absolute;
+      top: 10%;
+      left: 5px;
+      color: #a90dd4;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;   
+      transition: .5s;   
+}
+.username span ::before{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #a90dd4;
+}
+.username input:focus label,
+.username input:focus label{
+top: -5px   ;
+color: #a90dd4;
+
+}
+
+
+form .contraseña{
+    position: relative;
+border-bottom: 3px solid #a90dd4;
+margin: 30px 0;
+}
+.contraseña input{
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.contraseña label{
+    position: absolute;
+      top: 10%;
+      left: 5px;
+      color: #a90dd4;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;   
+      transition: .5s;   
+}
+.contraseña span ::before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #a90dd4;
+}
+.contraseña input :focus ~ label,
+.contraseña input :focus ~ label{
+top: 5%;
+color: #a90dd4;
+
+}
+.recordar{
+    text-decoration: underline;
+}
+input[type = "submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #a90dd4;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+
+}
+input[type = "submit"] :hover {
+ border-color:black;
+ transition: .5s;
+
+
+
+}
+.resgistrarse{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+
+}
+.resgistrarse a{
+color: #2a2886;
+text-decoration: none;
+
+}
+.resgistrarse a :hover{
+    text-decoration: underline;
+
+}
+.cuerpo{
+    background: #f6f7fb
 }
